@@ -53,4 +53,4 @@ df2 = df[df.dtypes[df.dtypes == 'int64'].index].describe()
 print(df2)
 
 # Display using rows, use list slicing : 
-print(df[['wait_time','id']][4:11])
+print(df[['wait_time','id']][4:11]) 
