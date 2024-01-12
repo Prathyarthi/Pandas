@@ -54,3 +54,27 @@ print(df2)
 
 # Display using rows, use list slicing : 
 print(df[['wait_time','id']][4:11]) 
+
+# To add new column inside a dataframe
+df['new_col'] = 0      # All the values are 0
+# print(df)
+
+df['new_col1'] = df['id'] + df['location_id']     # new_col1 is a new column with the sum of id column and location_id column
+# print(df)
+
+
+
+# To get categories of any data(i.e unique values) : 
+# print(pd.Categorical(df['status']))
+
+print(df['status'].unique())      # Another method to get unique values from a dataset
+
+# More operations on dataset
+# For example, in ['id'] column, if we want to filter the id>18
+
+print(df[df['id']>18])
+
+
+# Note: To combine two conditions, we can also use '&' or '|' getween the two conditions
+
+print(df['Age'])
